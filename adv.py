@@ -50,8 +50,6 @@ while len(rooms) < len(room_graph) - 1:
     traversal_path.append(exit_dir)
     reversed_path.append(opposite_Directions[exit_dir])
     player.travel(exit_dir)
-    if len(room_graph) - len(rooms) == 1:
-        rooms[player.current_room.id] = player.current_room.get_exits()
 
 
 # TRAVERSAL TEST
